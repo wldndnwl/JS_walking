@@ -7,10 +7,10 @@ let tutorNames = ["최원장", "김르탄", "윤창식", "박가현", "김병연
 // 이 아래에 코드를 작성해주세요!
 
 tutorNames.sort(function (a, b) {
-  //   if (a < b) return -1;
-  //   if (a > b) return 1;
-  //   return 0;
-  return a.localeCompare(b);
+  if (a < b) return -1;
+  if (a > b) return 1;
+  return 0;
+  // return a.localeCompare(b);
 });
 
 // 서치해서 어케 했는데 왜 이렇게 나오는지 전혀! 모르겠음 ㅎ

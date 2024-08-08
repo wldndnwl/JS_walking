@@ -16,6 +16,8 @@ async function fetchComments() {
       let slicedBody = " ";
       if (comment.body.length >= 40) {
         slicedBody = comment.body.slice(0, 40) + "...";
+      } else {
+        slicedBody = comment.body;
       }
 
       const commentElement = document.createElement("div");
